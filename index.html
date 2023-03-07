@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doom Eternal Tester Survey</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/9813b270ed0288e7c0388f0fd4ec68f5/32/16x16.png">
-</head>
-<body>
-    <div class="cover">
-        <div class="container__header">
-            <header class="header">
-                <h1 id="title">Doom Eternal Tester Survey</h1>
-                <p id="description">We need to know your expirience after play in our new game</p>
-            </header>
-            <main class="main">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doom Eternal Tester Survey</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/9813b270ed0288e7c0388f0fd4ec68f5/32/16x16.png">
+    </head>
+    <body>
+        <div class="container">
+                <header class="header">
+                    <h1 id="title">Doom Eternal Tester Survey</h1>
+                    <p id="description">We need to know your expirience after play in our new game</p>
+                </header>
                 <form action="#" method="POST" id="survey-form" class="form">
                     <div class="form__item">
                         <label for="name" id="name-label">Name</label>
@@ -29,8 +27,11 @@
                         <input type="email" id="email" placeholder="Enter your email: " name="email" class="form-input" required>
                     </div>
                     <div class="form__item">
-                        <label for="number" id="number-label">Age <span class="hint">(optional)</span> </label>
-                        <input type="number" id="number" placeholder="Enter your Age: " name="number" class="form-input" min="18" max="666"> 
+                        <label for="number" id="number-label">Age
+                            <span class="hint">
+                                (optional)</span>
+                        </label>
+                        <input type="number" id="number" placeholder="Enter your Age: " name="number" class="form-input" min="18" max="666">
                     </div>
                     <div class="form__item">
                         <p>Which selection best describes you?</p>
@@ -47,11 +48,14 @@
                         <p>Will you buy a game and recommend to other gamers?</p>
                         <label>
                             <input type="radio" name="recommend" value="yes" class="radio-input">
-                        Yes</label>
-                        <input type="radio" name="recommend" value="notbuy" class="radio-input">
-                        Don't buy but recommend </label>
-                        <input type="radio" name="recommend" value="no" class="radio-input">
-                        No</label>
+                            Yes</label>
+                        <label>
+                            <input type="radio" name="recommend" value="notbuy" class="radio-input">
+                            Don't buy but recommend
+                        </label>
+                        <label>
+                            <input type="radio" name="recommend" value="no" class="radio-input">
+                            No</label>
                     </div>
                     <div class="form__item">
                         <p>What do you like the most in your game?</p>
@@ -68,30 +72,28 @@
                         <p>What we must improve in our product before release?</p>
                         <label>
                             <input type="checkbox" name="improve" value="enemies-balance" class="checkbox-input">
-                        Enemies Balance</label>
+                            Enemies Balance</label>
                         <label>
                             <input type="checkbox" name="improve" value="weapons-balance" class="checkbox-input">
-                        Weapons Balance</label>
+                            Weapons Balance</label>
                         <label>
                             <input type="checkbox" name="improve" value="hud" class="checkbox-input">
-                        HUD</label>
+                            HUD</label>
                         <label>
                             <input type="checkbox" name="improve" value="more-gameplay-features" class="checkbox-input">
-                        More gameplay features</label>
+                            More gameplay features</label>
                         <label>
                             <input type="checkbox" name="improve" value="change-multiplayer" class="checkbox-input">
-                        Change Multiplayer</label>
+                            Change Multiplayer</label>
                     </div>
                     <div class="form__item">
                         <p>You can share your opinion below:</p>
-                       <textarea name="comment" id="comment" class="textarea-input" placeholder="Enter here..."></textarea> 
+                        <textarea name="comment" id="comment" class="textarea-input" placeholder="Enter here..."></textarea>
                     </div>
                     <div class="form__item">
                         <button class="submit-button" id="submit" type="submit">Submit</button>
                     </div>
                 </form>
-            </main>
-        </div>
-    </div>
-</body>
+            </div>
+    </body>
 </html>
